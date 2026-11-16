@@ -81,6 +81,7 @@ Phaser solo dibuja el mapa; toda la interfaz (barras, ventanas, botones) está e
 
 ```
 index.html          Página del juego y capas del HUD
+favicon.svg, favicon-32.png, apple-touch-icon.png  Ícono de la pestaña y del celular
 css/ui.css          Estilos
 data/               Contenido y balance (JSON). data/en/ = versión en inglés
   config.json       Todos los números del balance
