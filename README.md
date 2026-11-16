@@ -11,16 +11,6 @@ Está hecho con **datos abiertos de la NASA** y funciona en **inglés y español
 
 ---
 
-## ▶️ Jugar
-
-| Dónde | Cómo |
-|---|---|
-| **En línea** | `https://TU-USUARIO.github.io/beyond-survival/` |
-| **En Windows** | Doble clic en **`jugar.bat`** (necesita [Python 3](https://www.python.org/downloads/)). Se abre el navegador en `http://127.0.0.1:8000`. |
-| **En cualquier sistema** | `python tools/servidor.py` dentro de esta carpeta y abrir `http://127.0.0.1:8000` |
-| **Desde un celular** (misma red WiFi) | Usa la dirección `http://IP-DE-TU-PC:8000` que muestra `jugar.bat`. |
-
-> Abrir `index.html` con doble clic no funciona: el navegador bloquea los módulos y los archivos de datos cuando se abren desde el disco. Hace falta un servidor, aunque sea local.
 
 ### Controles
 | Acción | Teclado | Táctil |
@@ -109,24 +99,6 @@ tools/
 jugar.bat           Lanzador para Windows
 ```
 
-### Arquitectura
-- **Estado:**
-  - todo vive en un objeto plano, `juego.s`;
-  - los datos estáticos están en `juego.datos`, cargados desde `data/*.json`.
-- **Simulación de un sol:** `avanzarSol(s, d)` en `js/sim.js` ejecuta los sistemas en orden (energía → soporte vital → comida → radiación → comunicaciones). Cambia el estado y devuelve los textos del resumen del día.
-- **Acciones del jugador:** `ACCIONES[id] = { ap, ok(s, d, ...args), run(s, d, ...args) }` en `js/actions.js`.
-  - `ok` devuelve `true` o el motivo por el que no se puede.
-  - `bloqueo(id, s)` pone el candado sobre los edificios.
-- **Ventanas:**
-  - `abrir(titulo, html, botones)` en `js/ui/modal.js` devuelve una promesa con el valor del botón pulsado;
-  - si hay un botón «Cerrar», con `valor: 'cerrar'` o con `cierra: true`, aparecen la ✕, Esc y el clic fuera;
-  - sin ese botón, la ventana es una decisión obligatoria.
-- **Idiomas:**
-  - el código se escribe en español;
-  - en inglés, `js/i18n.js` traduce todo texto que aparece en la página y en el mapa usando `js/i18n-en.js`;
-  - los datos con texto tienen su copia en `data/en/`;
-  - el idioma por defecto es el inglés.
-- **Guardado:** en `localStorage`, con las claves `beyond-survival-partida`, `-ajustes`, `-punto` y `-demo`.
 
 ### Reglas del proyecto
 1. **Ninguna decisión es gratis:** cada opción cuesta energía, agua, comida, acciones, materiales o radiación.
@@ -141,15 +113,3 @@ jugar.bat           Lanzador para Windows
 
 ---
 
-## 🌐 Publicar en GitHub Pages
-
-```bash
-git init -b main
-git add .
-git commit -m "Beyond Survival"
-git remote add origin https://github.com/TU-USUARIO/beyond-survival.git
-git push -u origin main
-```
-
-Luego, en el repositorio: **Settings → Pages → Deploy from a branch → `main` / `(root)` → Save**.
-Cada `git push` vuelve a publicar el juego en 1 o 2 minutos.
