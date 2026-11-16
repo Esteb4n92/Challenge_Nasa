@@ -1,0 +1,13 @@
+{
+  "fuentes": [
+    { "titulo": "Solar storms", "texto": "The solar storms in the game come from DONKI, NASA's space weather database.", "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI/" },
+    { "titulo": "MOXIE", "texto": "The MOXIE instrument on the Perseverance rover made oxygen from the CO₂ on Mars.", "url": "https://science.nasa.gov/mission/mars-2020-perseverance/" },
+    { "titulo": "Radiation on Mars", "texto": "The RAD instrument on the Curiosity rover measures radiation at the surface: about 0.7 mSv per day.", "url": "https://science.nasa.gov/mission/msl-curiosity/" },
+    { "titulo": "Dust and solar power", "texto": "Dust covered InSight's panels (2022) and a global storm left Opportunity without power (2018).", "url": "https://science.nasa.gov/mission/insight/" },
+    { "titulo": "Ice on Mars", "texto": "The Phoenix lander found water ice under the ground in 2008.", "url": "https://science.nasa.gov/mission/phoenix/" },
+    { "titulo": "Water that needs filtering", "texto": "Phoenix also found perchlorates in the Martian soil: toxic salts that would have to be removed from water before drinking it.", "url": "https://science.nasa.gov/mission/phoenix/" },
+    { "titulo": "Plants in space", "texto": "Red lettuce, mizuna and radishes have been grown on the ISS. The data from these experiments is in OSDR.", "url": "https://osdr.nasa.gov/" },
+    { "titulo": "Communications", "texto": "A message between Mars and Earth takes between 3 and 22 minutes to arrive, depending on where the planets are.", "url": "https://science.nasa.gov/mars/" },
+    { "titulo": "Launch window", "texto": "Earth and Mars line up well for travel roughly every 26 months.", "url": "https://science.nasa.gov/mars/" }
+  ]
+}

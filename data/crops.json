@@ -1,0 +1,8 @@
+{
+  "cultivos": [
+    { "id": "lechuga", "nombre": "Lechuga roja", "icono": "🥬", "dias": 4, "comida": 12 },
+    { "id": "rabano", "nombre": "Rábano", "icono": "🌱", "dias": 5, "comida": 15 },
+    { "id": "mizuna", "nombre": "Mizuna", "icono": "🥗", "dias": 3, "comida": 8 }
+  ],
+  "dato": "Estos cultivos ya se sembraron en la Estación Espacial Internacional (experimentos Veggie y Advanced Plant Habitat). En la vida real tardan alrededor de un mes; en el juego los aceleramos."
+}

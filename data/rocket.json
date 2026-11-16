@@ -1,0 +1,10 @@
+{
+  "partes": [
+    { "id": "antena", "nombre": "Antena", "icono": "📡", "costo": { "cables": 2, "chips": 1 }, "desbloquea": "Ya puedes hablar con la Tierra (con retraso)" },
+    { "id": "electrico", "nombre": "Sistema eléctrico", "icono": "⚡", "costo": { "cables": 3, "metal": 1 }, "desbloquea": "La batería de la nave da +4 de energía cada sol" },
+    { "id": "tanques", "nombre": "Tanques de combustible", "icono": "⛽", "costo": { "metal": 4 }, "desbloquea": "Ya puedes guardar combustible hecho con MOXIE" },
+    { "id": "escudo", "nombre": "Escudo térmico", "icono": "🛡️", "costo": { "metal": 3, "chips": 1 }, "desbloquea": "La nave resistirá el calor al entrar a la Tierra" },
+    { "id": "motor", "nombre": "Motor", "icono": "🔥", "costo": { "metal": 3, "cables": 2, "chips": 1 }, "desbloquea": "La nave ya puede despegar" },
+    { "id": "navegacion", "nombre": "Computadora de navegación", "icono": "🧭", "costo": { "chips": 2 }, "requierePlanos": true, "desbloquea": "Ruta a casa calculada" }
+  ]
+}

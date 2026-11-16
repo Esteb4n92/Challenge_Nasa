@@ -1,0 +1,13 @@
+{
+  "fuentes": [
+    { "titulo": "Tormentas solares", "texto": "Las tormentas solares del juego vienen de DONKI, la base de datos de clima espacial de la NASA.", "url": "https://kauai.ccmc.gsfc.nasa.gov/DONKI/" },
+    { "titulo": "MOXIE", "texto": "El instrumento MOXIE del rover Perseverance fabricó oxígeno con el CO₂ de Marte.", "url": "https://science.nasa.gov/mission/mars-2020-perseverance/" },
+    { "titulo": "Radiación en Marte", "texto": "El instrumento RAD del rover Curiosity mide la radiación en la superficie: alrededor de 0,7 mSv al día.", "url": "https://science.nasa.gov/mission/msl-curiosity/" },
+    { "titulo": "Polvo y energía solar", "texto": "El polvo cubrió los paneles de InSight (2022) y una tormenta global dejó sin energía a Opportunity (2018).", "url": "https://science.nasa.gov/mission/insight/" },
+    { "titulo": "Hielo en Marte", "texto": "La sonda Phoenix encontró hielo de agua bajo el suelo en 2008.", "url": "https://science.nasa.gov/mission/phoenix/" },
+    { "titulo": "Agua que hay que filtrar", "texto": "Phoenix también encontró percloratos en el suelo de Marte: sales tóxicas que habría que quitar del agua antes de beberla.", "url": "https://science.nasa.gov/mission/phoenix/" },
+    { "titulo": "Plantas en el espacio", "texto": "Lechuga roja, mizuna y rábanos se han cultivado en la ISS. Los datos de estos experimentos están en OSDR.", "url": "https://osdr.nasa.gov/" },
+    { "titulo": "Comunicaciones", "texto": "Un mensaje entre Marte y la Tierra tarda entre 3 y 22 minutos en llegar, según dónde estén los planetas.", "url": "https://science.nasa.gov/mars/" },
+    { "titulo": "Ventana de lanzamiento", "texto": "La Tierra y Marte quedan bien alineados para viajar más o menos cada 26 meses.", "url": "https://science.nasa.gov/mars/" }
+  ]
+}

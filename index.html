@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyond Survival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ui.css">
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+</head>
+<body class="en-portada">
+  <main id="game"></main>
+
+  <!-- Arriba a la izquierda: astronauta, recursos, día y objetivo -->
+  <section id="hud-izq">
+    <div id="perfil" class="caja">
+      <canvas id="retrato" width="64" height="64"></canvas>
+      <div id="bars"></div>
+    </div>
+    <div id="traje-caja" class="caja" data-ayuda="traje"><div class="barra"><i id="traje-barra"></i><span>🧑‍🚀 Aire del traje</span><b id="traje-txt"></b></div></div>
+    <div id="dia" class="caja" data-ayuda="sol"><span id="sol"></span><span id="ap"></span></div>
+    <div id="objetivo" class="caja"></div>
+  </section>
+
+  <!-- Alarma de la Etapa 1 (sin paneles) -->
+  <div id="alarma"><b>🚨 ALERTA · GENERADOR DESTRUIDO</b><span>⚡ Batería de emergencia: <b id="alarma-bat">30%</b></span><small>Recoge silicio, cobre y aluminio y arma el panel solar</small></div>
+
+  <!-- Misión 2: llamada a la Tierra con retardo -->
+  <section id="llamada" class="caja">
+    <b>📞 LLAMADA DE PRUEBA A LA NASA</b>
+    <div id="ll-fase"></div>
+    <div id="ll-reloj"></div>
+    <div class="ll-ruta"><span>🔴 Marte</span><div class="ll-linea"><i id="ll-punto">✉️</i></div><span>🌍 Tierra</span></div>
+    <div class="ll-pie"><span id="ll-bateria"></span><button id="ll-boton">🔌 Apagar antena</button></div>
+    <small id="ll-consejo"></small>
+  </section>
+
+  <!-- Misión 3: el ciclo de la vida (agua y oxígeno) -->
+  <section id="ciclo" class="caja">
+    <b>♻️ EL CICLO DE LA VIDA</b>
+    <div class="ci-barra"><span>💧 Agua</span><div class="barra"><i id="ci-agua"></i><b id="ci-agua-txt"></b></div></div>
+    <div class="ci-barra"><span>🫧 Oxígeno</span><div class="barra"><i id="ci-o2"></i><b id="ci-o2-txt"></b></div></div>
+    <div class="ci-barra"><span>⚡ Batería</span><div class="barra"><i id="ci-bat"></i><b id="ci-bat-txt"></b></div></div>
+    <div class="ci-botones">
+      <button id="ci-purificador" class="sec">💧 Purificador<b>APAGADO</b></button>
+      <button id="ci-electrolisis" class="sec">🫧 Oxígeno<b>APAGADO</b></button>
+      <button id="ci-antenaCiclo" class="sec">📡 Antena<b>APAGADO</b></button>
+    </div>
+    <div id="ci-reloj"></div>
+    <small id="ci-consejo"></small>
+  </section>
+
+  <!-- Arriba al centro: datos de la misión (solo fuera de la base) -->
+  <section id="mision-hud" class="caja">
+    <b id="mh-nombre"></b>
+    <div id="mh-reloj"></div>
+    <div class="barra"><i id="mh-aire"></i><span>🧑‍🚀 Aire del traje</span><b id="mh-aire-txt"></b></div>
+    <div id="mh-carga"></div>
+    <div id="mh-lista"></div>
+    <div class="mh-botones"><button id="mh-rover" class="sec">🚙 Subir (E)</button><button id="mh-volver">🏠 Volver (R)</button></div>
+  </section>
+
+  <!-- Arriba a la derecha: minimapa (tócalo para caminar ahí) -->
+  <canvas id="minimapa" class="caja" width="192" height="128" title="Toca el mapa para ir ahí"></canvas>
+
+  <!-- Abajo: REGO, inventario y botones -->
+  <div id="rego" class="caja"><span class="robot">🤖</span><p><b>REGO</b><span id="rego-txt"></span></p></div>
+  <div id="inv"></div>
+  <div id="botones">
+    <button id="btn-menu" class="sec">⏸ Menú</button>
+    <button id="btn-fuentes" class="sec">📚 NASA</button>
+    <button id="btn-dormir">🌙 Dormir ya</button>
+  </div>
+
+  <!-- Menú principal -->
+  <div id="portada" class="oculto">
+    <div class="portada-caja">
+      <h1>BEYOND<span>SURVIVAL</span></h1>
+      <p class="lema">UN ERROR... UNA NUEVA VIDA</p>
+      <div id="portada-botones"></div>
+      <p class="portada-pie">Concurso NASA · Hecho con datos abiertos de la NASA</p>
+    </div>
+  </div>
+
+  <div id="modal" class="oculto">
+    <div id="modal-caja">
+      <h2 id="modal-titulo"></h2>
+      <div id="modal-cuerpo"></div>
+      <div id="modal-botones"></div>
+    </div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+  <script>
+    // Abierto con doble clic (file://): el navegador bloquea los módulos y los JSON. Explica cómo abrirlo.
+    if (location.protocol === 'file:') {
+      document.body.innerHTML = '<div style="font-family:sans-serif;max-width:560px;margin:12vh auto;padding:24px;background:#2a1a24;color:#f2e3c4;border:3px solid #e8642c;border-radius:8px;line-height:1.5">'
+        + '<h2 style="margin-top:0">🚀 Beyond Survival</h2>'
+        + '<p>Para jugar, abre el archivo <b>jugar.bat</b> de esta misma carpeta (doble clic). Se abrirá el juego en el navegador.</p>'
+        + '<p style="opacity:.8">To play, double-click <b>jugar.bat</b> in this same folder. The game will open in your browser.</p>'
+        + '<p style="opacity:.6;font-size:13px">El navegador no permite cargar el juego directamente desde el disco (file://); necesita un servidor local.</p></div>';
+    }
+  </script>
+</body>
+</html>

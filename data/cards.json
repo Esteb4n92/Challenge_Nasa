@@ -1,0 +1,58 @@
+{
+  "cartas": [
+    {
+      "id": "polvo",
+      "texto": "🌪️ REGO detecta una tormenta de polvo. Durante 3 soles llegará menos luz a los paneles.",
+      "opciones": [
+        { "texto": "Cubrir los paneles", "efectos": { "bateria": -8 }, "fijar": { "tormentaPolvo": 3 }, "resultado": "Los motores que cubren los paneles gastaron batería, pero los paneles no se ensuciarán." },
+        { "texto": "Dejarlos como están", "efectos": { "polvo": 0.3 }, "fijar": { "tormentaPolvo": 3 }, "resultado": "Los paneles se llenaron de polvo: producirán menos hasta que los limpies." }
+      ],
+      "dato": "En 2018 una tormenta de polvo que cubrió todo Marte dejó sin energía al rover Opportunity. El polvo también apagó al módulo InSight en 2022."
+    },
+    {
+      "id": "moxie",
+      "texto": "⚙️ MOXIE hace un ruido extraño.",
+      "opciones": [
+        { "texto": "Apagarla y revisarla", "efectos": { "o2": -6 }, "resultado": "MOXIE estuvo apagada un rato: produjo menos oxígeno, pero quedó bien." },
+        { "texto": "Dejarla funcionando", "efectos": { "bateria": -15 }, "resultado": "Funcionó forzada y gastó mucha más energía de la normal." }
+      ],
+      "dato": "MOXIE, a bordo del rover Perseverance, demostró que se puede fabricar oxígeno con el CO₂ del aire de Marte."
+    },
+    {
+      "id": "fuga",
+      "texto": "💧 ¡Hay una pequeña fuga en el tanque de agua!",
+      "opciones": [
+        { "texto": "Sellarla con herramientas eléctricas", "efectos": { "bateria": -10 }, "resultado": "Sellaste la fuga, pero las herramientas gastaron batería." },
+        { "texto": "Dejarla para mañana", "efectos": { "agua": -12 }, "resultado": "Durante la noche se perdió agua." }
+      ],
+      "dato": "En la Estación Espacial Internacional se recicla cerca del 98% del agua, ¡incluidos el sudor y la orina!"
+    },
+    {
+      "id": "roca",
+      "texto": "🪨 Encontraste una roca rojiza muy pesada cerca de la base.",
+      "opciones": [
+        { "texto": "Analizarla y fundirla", "efectos": { "bateria": -15, "metal": 1 }, "resultado": "Tenía hierro: lo convertiste en una pieza útil, pero el horno gastó batería." },
+        { "texto": "Guardarla para después", "efectos": {}, "resultado": "La guardaste. No gastaste energía, pero tampoco ganaste nada." }
+      ],
+      "dato": "Marte es rojo porque su suelo tiene mucho óxido de hierro: ¡está oxidado!"
+    },
+    {
+      "id": "luz",
+      "texto": "🌱 Las plantas del invernadero se ven débiles. Necesitan más luz.",
+      "opciones": [
+        { "texto": "Encender luces extra", "efectos": { "bateria": -10, "comida": 4 }, "resultado": "Las plantas crecieron más fuertes, pero las luces gastaron batería." },
+        { "texto": "Ahorrar energía", "efectos": { "comida": -3 }, "resultado": "Algunas hojas se marchitaron: hay un poco menos de comida." }
+      ],
+      "dato": "En el experimento Veggie de la ISS las plantas crecen con luces LED rojas, azules y verdes: por eso el invernadero se ve rosado."
+    },
+    {
+      "id": "frio",
+      "texto": "🥶 Esta noche la temperatura afuera bajará a -75 °C.",
+      "opciones": [
+        { "texto": "Subir la calefacción", "efectos": { "bateria": -12 }, "fijar": { "nocheFria": true }, "resultado": "Dormiste calientito, pero la calefacción gastó batería." },
+        { "texto": "Abrigarse y aguantar", "efectos": { "comida": -4 }, "fijar": { "nocheFria": true }, "resultado": "Tu cuerpo gastó más energía para mantenerse caliente: comiste más." }
+      ],
+      "dato": "Las noches en Marte pueden bajar de -70 °C. El rover Curiosity lo mide con su estación meteorológica REMS."
+    }
+  ]
+}

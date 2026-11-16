@@ -1,0 +1,39 @@
+{
+  "solesVentana": 30,
+  "accionesPorSol": 4,
+  "inicial": {
+    "o2": 100, "agua": 100, "comida": 50, "bateria": 30, "dosis": 0,
+    "combustible": 0, "metal": 0, "cables": 0, "chips": 0
+  },
+  "consumo": { "o2": 8, "agua": 8, "comida": 6 },
+  "cultivo": { "aguaPorPlanta": 2 },
+  "cuerpo": { "dosisMedia": 45, "dosisAlta": 75, "trajeRadiacion": 1.33, "umbralHambre": 20, "umbralSed": 20, "trajeDebil": 1.25, "velocidadDebil": 0.75 },
+  "energia": { "panelesMax": 34, "polvoPorSol": 0.06, "bateriaMax": 100, "bonoNave": 4 },
+  "demanda": { "soporte": 8, "moxie": 8, "invernadero": 4 },
+  "moxie": { "o2PorSol": 13, "aguaPorCombustible": 0.5 },
+  "reciclador": { "inicial": 0.7, "mejora": 0.15, "max": 0.98 },
+  "filtro": { "desgastePorSol": 12, "umbral": 30 },
+  "radiacion": { "basePorSol": 2, "impactoCME": 20, "impactoSEP": 14, "refugioReduce": 0.8, "afueraPorMinuto": 1, "alertaMultiplicador": 2 },
+  "combustibleMeta": 35,
+  "traje": { "max": 60, "recarga": 25, "o2PorSegundo": 0.05 },
+  "sala": { "costo": { "metal": 3, "cables": 2 } },
+  "lago": { "probCongelado": 0.18 },
+  "plantaAgua": { "ap": 1, "costo": { "metal": 2, "cables": 1 }, "aguaPorSol": 5, "bateriaPorSol": 3 },
+  "emergencia": { "reponer": 20 },
+  "arranque": { "bateriaPorSegundo": 0.25 },
+  "misionTiempo": 180,
+  "antena": { "costoEncender": 30, "consumoPorSegundo": 0.6, "retardoMin": 20, "puzzleSeg": 120 },
+  "tormenta": { "prob": 0.15, "decisionSeg": 10 },
+  "ciclo": {
+    "inicio": { "agua": 50, "o2": 45, "bateriaMin": 25 },
+    "consumo": { "agua": 0.5, "o2": 0.6 },
+    "panelPorSeg": 0.8,
+    "purificador": { "agua": 1.0, "bateria": 0.6 },
+    "electrolisis": { "o2": 1.2, "agua": 0.25, "bateria": 0.7 },
+    "antenaBateria": 0.6,
+    "zonaSegura": 30,
+    "segundosMeta": 60
+  },
+  "tormentaSolar": { "decisionSeg": 10, "costoEscudos": 35, "dosisEscudos": 4, "costoRegolito": 2, "horaAlerta": 0.4 },
+  "dia": { "duracionSeg": 240, "inicio": 6, "fin": 21 }
+}

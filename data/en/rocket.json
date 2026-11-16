@@ -1,0 +1,10 @@
+{
+  "partes": [
+    { "id": "antena", "nombre": "Antenna", "icono": "📡", "costo": { "cables": 2, "chips": 1 }, "desbloquea": "Now you can talk to Earth (with a delay)" },
+    { "id": "electrico", "nombre": "Electrical system", "icono": "⚡", "costo": { "cables": 3, "metal": 1 }, "desbloquea": "The ship's battery gives +4 energy every sol" },
+    { "id": "tanques", "nombre": "Fuel tanks", "icono": "⛽", "costo": { "metal": 4 }, "desbloquea": "Now you can store fuel made with MOXIE" },
+    { "id": "escudo", "nombre": "Heat shield", "icono": "🛡️", "costo": { "metal": 3, "chips": 1 }, "desbloquea": "The ship will survive the heat when entering Earth" },
+    { "id": "motor", "nombre": "Engine", "icono": "🔥", "costo": { "metal": 3, "cables": 2, "chips": 1 }, "desbloquea": "The ship can now lift off" },
+    { "id": "navegacion", "nombre": "Navigation computer", "icono": "🧭", "costo": { "chips": 2 }, "requierePlanos": true, "desbloquea": "Route home calculated" }
+  ]
+}

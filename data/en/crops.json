@@ -1,0 +1,8 @@
+{
+  "cultivos": [
+    { "id": "lechuga", "nombre": "Red lettuce", "icono": "🥬", "dias": 4, "comida": 12 },
+    { "id": "rabano", "nombre": "Radish", "icono": "🌱", "dias": 5, "comida": 15 },
+    { "id": "mizuna", "nombre": "Mizuna", "icono": "🥗", "dias": 3, "comida": 8 }
+  ],
+  "dato": "These crops have already been grown on the International Space Station (Veggie and Advanced Plant Habitat experiments). In real life they take about a month; in the game we speed them up."
+}

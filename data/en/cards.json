@@ -1,0 +1,58 @@
+{
+  "cartas": [
+    {
+      "id": "polvo",
+      "texto": "🌪️ REGO detects a dust storm. For 3 sols less light will reach the panels.",
+      "opciones": [
+        { "texto": "Cover the panels", "efectos": { "bateria": -8 }, "fijar": { "tormentaPolvo": 3 }, "resultado": "The motors that cover the panels used battery, but the panels won't get dirty." },
+        { "texto": "Leave them as they are", "efectos": { "polvo": 0.3 }, "fijar": { "tormentaPolvo": 3 }, "resultado": "The panels filled up with dust: they will produce less until you clean them." }
+      ],
+      "dato": "In 2018 a dust storm that covered all of Mars left the Opportunity rover without power. Dust also shut down the InSight lander in 2022."
+    },
+    {
+      "id": "moxie",
+      "texto": "⚙️ MOXIE is making a strange noise.",
+      "opciones": [
+        { "texto": "Turn it off and check it", "efectos": { "o2": -6 }, "resultado": "MOXIE was off for a while: it made less oxygen, but now it works fine." },
+        { "texto": "Keep it running", "efectos": { "bateria": -15 }, "resultado": "It ran under strain and used much more energy than usual." }
+      ],
+      "dato": "MOXIE, on board the Perseverance rover, showed that we can make oxygen from the CO₂ in the Martian air."
+    },
+    {
+      "id": "fuga",
+      "texto": "💧 There's a small leak in the water tank!",
+      "opciones": [
+        { "texto": "Seal it with power tools", "efectos": { "bateria": -10 }, "resultado": "You sealed the leak, but the tools used battery." },
+        { "texto": "Leave it for tomorrow", "efectos": { "agua": -12 }, "resultado": "Water was lost during the night." }
+      ],
+      "dato": "On the International Space Station about 98% of the water is recycled, even sweat and urine!"
+    },
+    {
+      "id": "roca",
+      "texto": "🪨 You found a very heavy reddish rock near the base.",
+      "opciones": [
+        { "texto": "Analyze it and melt it", "efectos": { "bateria": -15, "metal": 1 }, "resultado": "It had iron: you turned it into a useful part, but the furnace used battery." },
+        { "texto": "Keep it for later", "efectos": {}, "resultado": "You kept it. You used no energy, but you didn't gain anything either." }
+      ],
+      "dato": "Mars is red because its soil has a lot of iron oxide: it's rusty!"
+    },
+    {
+      "id": "luz",
+      "texto": "🌱 The plants in the greenhouse look weak. They need more light.",
+      "opciones": [
+        { "texto": "Turn on extra lights", "efectos": { "bateria": -10, "comida": 4 }, "resultado": "The plants grew stronger, but the lights used battery." },
+        { "texto": "Save energy", "efectos": { "comida": -3 }, "resultado": "Some leaves wilted: there's a bit less food." }
+      ],
+      "dato": "In the Veggie experiment on the ISS, plants grow under red, blue and green LED lights: that's why the greenhouse looks pink."
+    },
+    {
+      "id": "frio",
+      "texto": "🥶 Tonight the temperature outside will drop to -75 °C.",
+      "opciones": [
+        { "texto": "Turn up the heating", "efectos": { "bateria": -12 }, "fijar": { "nocheFria": true }, "resultado": "You slept warm and cozy, but the heating used battery." },
+        { "texto": "Bundle up and endure it", "efectos": { "comida": -4 }, "fijar": { "nocheFria": true }, "resultado": "Your body used more energy to stay warm: you ate more." }
+      ],
+      "dato": "Nights on Mars can drop below -70 °C. The Curiosity rover measures it with its REMS weather station."
+    }
+  ]
+}
