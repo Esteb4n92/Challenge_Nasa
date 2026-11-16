@@ -54,14 +54,6 @@ Está hecho con **datos abiertos de la NASA** y funciona en **inglés y español
 | Cultivos en el espacio | [NASA OSDR](https://osdr.nasa.gov/) |
 | Comunicaciones y ventanas de lanzamiento | [NASA Mars](https://science.nasa.gov/mars/) |
 
-Para usar tormentas reales en lugar de las simuladas:
-
-```bash
-python tools/descargar_donki.py 2024-05-01 2024-05-31
-```
-
-Usa la variable de entorno `NASA_API_KEY` (gratis en [api.nasa.gov](https://api.nasa.gov)) o, si no está, `DEMO_KEY`. Llena `data/donki.json`.
-
 ---
 
 ## 🧩 Para desarrolladores
